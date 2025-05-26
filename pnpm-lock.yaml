@@ -9,6 +9,10 @@ importers:
   .:
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> cce40a7 (version 4)
       '@hookform/resolvers':
         specifier: ^5.0.1
         version: 5.0.1(react-hook-form@7.56.4(react@19.1.0))
@@ -33,8 +37,12 @@ importers:
       lucide-react:
         specifier: ^0.511.0
         version: 0.511.0(react@19.1.0)
+<<<<<<< HEAD
 =======
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
+=======
+>>>>>>> d929c3e (version 4)
+>>>>>>> cce40a7 (version 4)
       next:
         specifier: 15.3.2
         version: 15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -45,12 +53,19 @@ importers:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
       react-hook-form:
         specifier: ^7.56.4
         version: 7.56.4(react@19.1.0)
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.0)
+=======
+=======
+      react-hook-form:
+        specifier: ^7.56.4
+        version: 7.56.4(react@19.1.0)
+>>>>>>> cce40a7 (version 4)
       tailwind-merge:
         specifier: ^3.3.0
         version: 3.3.0
@@ -60,8 +75,12 @@ importers:
       zod:
         specifier: ^3.25.28
         version: 3.25.28
+<<<<<<< HEAD
 =======
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
+=======
+>>>>>>> d929c3e (version 4)
+>>>>>>> cce40a7 (version 4)
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -512,13 +531,19 @@ packages:
     engines: {node: '>=8'}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cce40a7 (version 4)
   emailjs-com@3.2.0:
     resolution: {integrity: sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==}
     engines: {node: '>=12.0.0'}
     deprecated: The SDK name changed to @emailjs/browser
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
+=======
+>>>>>>> cce40a7 (version 4)
   enhanced-resolve@5.18.1:
     resolution: {integrity: sha512-ZSW3ma5GkcQBIpwZTSRAI8N71Uuwgs93IezB7mf7R60tC8ZbJideoDNKjHn2O9KIlx6rkGTTEk1xUCK2E1Y2Yg==}
     engines: {node: '>=10.13.0'}
@@ -1134,10 +1159,15 @@ snapshots:
   detect-libc@2.0.4: {}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   emailjs-com@3.2.0: {}
 
 =======
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
+=======
+  emailjs-com@3.2.0: {}
+
+>>>>>>> cce40a7 (version 4)
   enhanced-resolve@5.18.1:
     dependencies:
       graceful-fs: 4.2.11

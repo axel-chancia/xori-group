@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> cce40a7 (version 4)
 import SectionServices from "@/components/Section-service"; // Ensure the case matches
 import Galeries from "@/components/Galeries";
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
@@ -26,3 +29,5 @@ export default function HomePage() {
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
 }
 
+=======
+>>>>>>> d929c3e (version 4)
