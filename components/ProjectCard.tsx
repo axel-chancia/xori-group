@@ -1,5 +1,5 @@
-"use client";
-import { motion } from "framer-motion";
+'use client';
+import { motion } from 'framer-motion';
 
 type Project = {
   title: string;
@@ -12,21 +12,20 @@ type Project = {
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.4 }}
-      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+      className="space-y-4"
     >
       <img
         src={project.image}
         alt={project.title}
-        className="h-48 w-full object-cover"
+        className="w-full h-64 md:h-80 object-cover rounded-lg shadow"
       />
-      <div className="p-5">
-        <p className="text-sm text-gray-500 uppercase mb-1">{project.category} · {project.year}</p>
-        <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-        <p className="text-gray-700 text-sm">{project.description}</p>
-      </div>
+      <h2 className="text-2xl font-bold">{project.title}</h2>
+      <p className="text-gray-500">{project.category} · {project.year}</p>
+      <p className="text-gray-700">{project.description}</p>
     </motion.div>
   );
 }
