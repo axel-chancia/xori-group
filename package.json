@@ -14,16 +14,23 @@
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+<<<<<<< HEAD
     "emailjs-com": "^3.2.0",
+=======
+>>>>>>> 0a2747e (projets et contact)
     "framer-motion": "^12.14.0",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.56.4",
+<<<<<<< HEAD
     "react-icons": "^5.5.0",
     "tailwind-merge": "^3.3.0",
     "xuri-group": "link:",
+=======
+    "tailwind-merge": "^3.3.0",
+>>>>>>> 0a2747e (projets et contact)
     "zod": "^3.25.28"
   },
   "devDependencies": {
