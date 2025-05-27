@@ -65,7 +65,13 @@ importers:
       react-hook-form:
         specifier: ^7.56.4
         version: 7.56.4(react@19.1.0)
+<<<<<<< HEAD
 >>>>>>> cce40a7 (version 4)
+=======
+      react-icons:
+        specifier: ^5.5.0
+        version: 5.5.0(react@19.1.0)
+>>>>>>> cb7f32a (version 3)
       tailwind-merge:
         specifier: ^3.3.0
         version: 3.3.0
@@ -728,6 +734,10 @@ packages:
       react: ^19.1.0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> cb7f32a (version 3)
   react-hook-form@7.56.4:
     resolution: {integrity: sha512-Rob7Ftz2vyZ/ZGsQZPaRdIefkgOSrQSPXfqBdvOPwJfoGnjwRJUs7EM7Kc1mcoDv3NOtqBzPGbcMB8CGn9CKgw==}
     engines: {node: '>=18.0.0'}
@@ -739,8 +749,12 @@ packages:
     peerDependencies:
       react: '*'
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
+=======
+>>>>>>> 8f9a1c7 (version 3)
+>>>>>>> cb7f32a (version 3)
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
@@ -1322,6 +1336,10 @@ snapshots:
       scheduler: 0.26.0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> cb7f32a (version 3)
   react-hook-form@7.56.4(react@19.1.0):
     dependencies:
       react: 19.1.0
@@ -1330,8 +1348,12 @@ snapshots:
     dependencies:
       react: 19.1.0
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
+=======
+>>>>>>> 8f9a1c7 (version 3)
+>>>>>>> cb7f32a (version 3)
   react@19.1.0: {}
 
   scheduler@0.26.0: {}
