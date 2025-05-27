@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
+import { FiSend } from 'react-icons/fi'; 
+
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);
@@ -14,10 +16,10 @@ export function ContactForm() {
 
     emailjs
       .sendForm(
-        'votre_service_id',    // À remplacer
-        'votre_template_id',   // À remplacer
+        'service_jjq0db5',    // ← remplace par ton ID
+        '6bX8atfZl0xutKyYZ',   // ← remplace par ton ID
         e.target,
-        'votre_user_id'        // À remplacer
+        'HxfQwbqQY1FrnPKn36_EM'        // ← remplace par ton ID
       )
       .then(() => {
         setSent(true);
@@ -44,7 +46,7 @@ export function ContactForm() {
           animate={{ opacity: 1, y: 0 }}
           className="text-green-400 text-center text-lg font-semibold"
         >
-          ✅ Message bien envoyé. Merci !
+          ✅ Merci ! Votre message a été envoyé. Une copie vous a aussi été envoyée.
         </motion.div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -55,7 +57,7 @@ export function ContactForm() {
               name="user_name"
               required
               placeholder="Votre nom"
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
             />
           </div>
 
@@ -66,7 +68,7 @@ export function ContactForm() {
               name="user_email"
               required
               placeholder="Votre email"
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
             />
           </div>
 
@@ -76,19 +78,26 @@ export function ContactForm() {
               name="message"
               rows={5}
               required
-              placeholder="Écrivez votre message..."
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Votre message..."
+              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
             />
           </div>
 
           <motion.button
-            type="submit"
             whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
+            whileTap={{ scale: 0.95 }}
+            type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-6 rounded transition"
+            className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-6 rounded flex items-center justify-center gap-2 transition"
           >
-            {loading ? 'Envoi en cours...' : 'Envoyer'}
+            {loading ? (
+              'Envoi...'
+            ) : (
+              <>
+                <FiSend className="text-lg animate-bounce" />
+                Envoyer
+              </>
+            )}
           </motion.button>
         </form>
       )}
