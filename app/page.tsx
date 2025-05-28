@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> cce40a7 (version 4)
@@ -14,19 +15,30 @@ import SectionServices from "@/components/Section-service"; // Ensure the case m
 import Galeries from "@/components/Galeries";
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
 =======
+=======
+>>>>>>> e0d161a (Header 1)
 import SectionServices from "@/components/Section-service"; // Ensure the case matches
 import Galeries from "@/components/Galeries";
 =======
 import { HeroSection } from '@/components/HeroSection'
+=======
+
+import Heroe from '@/components/Heroe'
+>>>>>>> 8996147 (Header 1)
 import  Apropos from '@/components/Apropos'
 >>>>>>> 4fb6bbb (Header 1)
 >>>>>>> b3bef06 (Header 1)
 
+<<<<<<< HEAD
 import Heroe from '@/components/Heroe'
 import  Apropos from '@/components/Apropos'
 
 
 export default function HomePage() {
+=======
+<<<<<<< HEAD
+export default function Home() {
+>>>>>>> e0d161a (Header 1)
   return (
 <<<<<<< HEAD
     <main className="flex flex-col space-y-32">
@@ -51,12 +63,14 @@ import { HeroSection } from '@/components/HeroSection'
 =======
 >>>>>>> 0a5f40b (version 6)
 import Heroe from '@/components/Heroe'
+=======
+>>>>>>> 8996147 (Header 1)
 
 export default function HomePage() {
   return (
     <main className="flex flex-col space-y-32">
-<<<<<<< HEAD
       <Heroe />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <HeroSection />
@@ -66,10 +80,18 @@ export default function HomePage() {
 =======
 =======
       <HeroSection />
+=======
+>>>>>>> e0d161a (Header 1)
       <Apropos />
+<<<<<<< HEAD
       
 >>>>>>> 4fb6bbb (Header 1)
+<<<<<<< HEAD
 >>>>>>> b3bef06 (Header 1)
+=======
+=======
+>>>>>>> 8996147 (Header 1)
+>>>>>>> e0d161a (Header 1)
     </main>
 )
 }
