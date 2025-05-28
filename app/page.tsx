@@ -1,11 +1,9 @@
-import { HeroSection } from '@/components/HeroSection'
 import Heroe from '@/components/Heroe'
 
 export default function HomePage() {
   return (
     <main className="flex flex-col space-y-32">
       <Heroe />
-      <HeroSection />
     </main>
 )
 }
