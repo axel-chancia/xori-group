@@ -31,8 +31,8 @@ export default function Header() {
           {/* Menu Desktop */}
           <nav className="hidden md:flex space-x-6 items-center">
             <Link href="/" className="text-gray-700 hover:text-blue-600">Accueil</Link>
-            <Link href="/a-propos" className="text-gray-700 hover:text-blue-600">À propos</Link>
-            <Link href="/services" className="text-gray-700 hover:text-blue-600">Nos services</Link>
+            <Link href="/#About" className="text-gray-700 hover:text-blue-600">À propos</Link>
+            <Link href="/service" className="text-gray-700 hover:text-blue-600">Nos services</Link>
             <Link href="/projets" className="text-gray-700 hover:text-blue-600">Réalisations</Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
             <Link href="/devis">
@@ -59,7 +59,7 @@ export default function Header() {
             {menuOpen && (
               <div className="absolute right-0 mt-2 w-64 bg-white rounded-xl shadow-lg px-6 py-4 space-y-3 z-50 border border-gray-200">
                 <Link href="/" className="block text-gray-700 hover:text-blue-600" onClick={toggleMenu}>Accueil</Link>
-                <Link href="/a-propos" className="block text-gray-700 hover:text-blue-600" onClick={toggleMenu}>À propos</Link>
+                <Link href="/#About" className="block text-gray-700 hover:text-blue-600" onClick={toggleMenu}>À propos</Link>
                 <Link href="/services" className="block text-gray-700 hover:text-blue-600" onClick={toggleMenu}>Nos services</Link>
                 <Link href="/projets" className="block text-gray-700 hover:text-blue-600" onClick={toggleMenu}>Réalisations</Link>
                 <Link href="/contact" className="block text-gray-700 hover:text-blue-600" onClick={toggleMenu}>Contact</Link>

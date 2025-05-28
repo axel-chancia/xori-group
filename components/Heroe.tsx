@@ -83,10 +83,10 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <Button size="lg" className="text-white bg-yellow-500 hover:bg-yellow-600">
+          <Button>
             Nos Services
           </Button>
-          <Button variant="outline" size="lg" className="text-yellow-500">
+          <Button size="lg">
             Nous Contacter
           </Button>
         </motion.div>

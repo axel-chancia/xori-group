@@ -24,10 +24,17 @@ import { HeroSection } from '@/components/HeroSection'
 =======
 
 import Heroe from '@/components/Heroe'
+<<<<<<< HEAD
 >>>>>>> 8996147 (Header 1)
 import  Apropos from '@/components/Apropos'
 >>>>>>> 4fb6bbb (Header 1)
+<<<<<<< HEAD
 >>>>>>> b3bef06 (Header 1)
+=======
+=======
+import  Apropos from '@/components/About'
+>>>>>>> 142a156 ( Changes to be committed:)
+>>>>>>> 0ddebf9 ( Changes to be committed:)
 
 <<<<<<< HEAD
 import Heroe from '@/components/Heroe'
