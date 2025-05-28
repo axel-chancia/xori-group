@@ -3,39 +3,42 @@
 import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import { FaPlay, FaPause } from "react-icons/fa"
 
 export default function Hero() {
   const videoRefs = [
     useRef<HTMLVideoElement>(null),
-    
     useRef<HTMLVideoElement>(null),
     useRef<HTMLVideoElement>(null),
-    
   ]
 
   const [currentVideo, setCurrentVideo] = useState(0)
+  const [isPlaying, setIsPlaying] = useState(true)
 
   useEffect(() => {
     videoRefs.forEach((ref, index) => {
       const video = ref.current
       if (video) {
         if (index === currentVideo) {
-          video.play()
+          isPlaying ? video.play() : video.pause()
         } else {
           video.pause()
           video.currentTime = 0
         }
       }
     })
-  }, [currentVideo])
+  }, [currentVideo, isPlaying])
 
   const handleEnded = () => {
     setCurrentVideo((prev) => (prev + 1) % videoRefs.length)
   }
 
+  const toggleVideo = () => {
+    setIsPlaying((prev) => !prev)
+  }
+
   const videoSources = [
     "video2.mp4",
-    
     "video3.mp4",
     "video4.mp4",
   ]
@@ -57,8 +60,7 @@ export default function Hero() {
       ))}
 
       {/* Contenu Hero */}
-     <div className="absolute bottom-16 left-10 z-10 text-left max-w-xl space-y-6 px-4">
-
+      <div className="absolute bottom-16 left-10 z-10 text-left max-w-xl space-y-6 px-4">
         <motion.h1
           className="text-4xl md:text-5xl font-extrabold leading-tight"
           initial={{ opacity: 0, y: 40 }}
@@ -91,6 +93,16 @@ export default function Hero() {
           </Button>
         </motion.div>
       </div>
+
+      {/* Bouton Play/Pause */}
+      <button
+        onClick={toggleVideo}
+        className="absolute bottom-8 right-8 z-10 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur transition"
+        aria-label={isPlaying ? "Mettre en pause" : "Lire la vidéo"}
+      >
+        {isPlaying ? <FaPause /> : <FaPlay />}
+      </button>
     </section>
   )
 }
+
