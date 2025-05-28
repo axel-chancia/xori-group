@@ -8,11 +8,6 @@ importers:
 
   .:
     dependencies:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> cce40a7 (version 4)
       '@hookform/resolvers':
         specifier: ^5.0.1
         version: 5.0.1(react-hook-form@7.56.4(react@19.1.0))
@@ -37,12 +32,6 @@ importers:
       lucide-react:
         specifier: ^0.511.0
         version: 0.511.0(react@19.1.0)
-<<<<<<< HEAD
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
-=======
->>>>>>> d929c3e (version 4)
->>>>>>> cce40a7 (version 4)
       next:
         specifier: 15.3.2
         version: 15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -52,26 +41,12 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
-<<<<<<< HEAD
-<<<<<<< HEAD
       react-hook-form:
         specifier: ^7.56.4
         version: 7.56.4(react@19.1.0)
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.0)
-=======
-=======
-      react-hook-form:
-        specifier: ^7.56.4
-        version: 7.56.4(react@19.1.0)
-<<<<<<< HEAD
->>>>>>> cce40a7 (version 4)
-=======
-      react-icons:
-        specifier: ^5.5.0
-        version: 5.5.0(react@19.1.0)
->>>>>>> cb7f32a (version 3)
       tailwind-merge:
         specifier: ^3.3.0
         version: 3.3.0
@@ -81,12 +56,6 @@ importers:
       zod:
         specifier: ^3.25.28
         version: 3.25.28
-<<<<<<< HEAD
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
-=======
->>>>>>> d929c3e (version 4)
->>>>>>> cce40a7 (version 4)
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -100,7 +69,6 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.1.5(@types/react@19.1.5)
-<<<<<<< HEAD
       prisma:
         specifier: ^6.8.2
         version: 6.8.2(typescript@5.8.3)
@@ -110,11 +78,6 @@ importers:
       tw-animate-css:
         specifier: ^1.3.0
         version: 1.3.0
-=======
-      tailwindcss:
-        specifier: ^4
-        version: 4.1.7
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
       typescript:
         specifier: ^5
         version: 5.8.3
@@ -132,14 +95,11 @@ packages:
   '@emnapi/runtime@1.4.3':
     resolution: {integrity: sha512-pBPWdu6MLKROBX05wSNKcNb++m5Er+KQ9QkB+WVM+pW2Kx9hoSrVTnu3BdkI5eBLZoKu/J6mW/B6i6bJB2ytXQ==}
 
-<<<<<<< HEAD
   '@hookform/resolvers@5.0.1':
     resolution: {integrity: sha512-u/+Jp83luQNx9AdyW2fIPGY6Y7NG68eN2ZW8FOJYL+M0i4s49+refdJdOp/A9n9HFQtQs3HIDHQvX3ZET2o7YA==}
     peerDependencies:
       react-hook-form: ^7.55.0
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   '@img/sharp-darwin-arm64@0.34.2':
     resolution: {integrity: sha512-OfXHZPppddivUJnqyKoi5YVeHRkkNE2zUFT2gbpKxp/JZCFYEYubnMg+gOp6lWfasPrTS+KPosKqdI+ELYVDtg==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
@@ -329,7 +289,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-<<<<<<< HEAD
   '@prisma/client@6.8.2':
     resolution: {integrity: sha512-5II+vbyzv4si6Yunwgkj0qT/iY0zyspttoDrL3R4BYgLdp42/d2C8xdi9vqkrYtKt9H32oFIukvyw3Koz5JoDg==}
     engines: {node: '>=18.18'}
@@ -381,8 +340,6 @@ packages:
   '@standard-schema/utils@0.3.0':
     resolution: {integrity: sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
 
@@ -499,7 +456,6 @@ packages:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
     engines: {node: '>=18'}
 
-<<<<<<< HEAD
   class-variance-authority@0.7.1:
     resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
 
@@ -510,11 +466,6 @@ packages:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
 
-=======
-  client-only@0.0.1:
-    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
-
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -536,25 +487,15 @@ packages:
     resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
     engines: {node: '>=8'}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> cce40a7 (version 4)
   emailjs-com@3.2.0:
     resolution: {integrity: sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==}
     engines: {node: '>=12.0.0'}
     deprecated: The SDK name changed to @emailjs/browser
 
-<<<<<<< HEAD
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
-=======
->>>>>>> cce40a7 (version 4)
   enhanced-resolve@5.18.1:
     resolution: {integrity: sha512-ZSW3ma5GkcQBIpwZTSRAI8N71Uuwgs93IezB7mf7R60tC8ZbJideoDNKjHn2O9KIlx6rkGTTEk1xUCK2E1Y2Yg==}
     engines: {node: '>=10.13.0'}
 
-<<<<<<< HEAD
   framer-motion@12.14.0:
     resolution: {integrity: sha512-P/CLiA+YLc0GL1nB2bgtRBFAbRh0aawU5KPLqnXi6QEZQE2BEwqgIH8qUIT7cMN+4a4nj0iZ2uWTKOrzcYsyGQ==}
     peerDependencies:
@@ -569,8 +510,6 @@ packages:
       react-dom:
         optional: true
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
@@ -645,14 +584,11 @@ packages:
     resolution: {integrity: sha512-xi6IyHML+c9+Q3W0S4fCQJOym42pyurFiJUHEcEyHS0CeKzia4yZDEsLlqOFykxOdHpNy0NmvVO31vcSqAxJCg==}
     engines: {node: '>= 12.0.0'}
 
-<<<<<<< HEAD
   lucide-react@0.511.0:
     resolution: {integrity: sha512-VK5a2ydJ7xm8GvBeKLS9mu1pVK6ucef9780JVUjw6bAjJL/QXnd4Y0p7SPeOUMC27YhzNCZvm5d/QX0Tp3rc0w==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
@@ -669,15 +605,12 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-<<<<<<< HEAD
   motion-dom@12.14.0:
     resolution: {integrity: sha512-t5v1QNXrOsLmIzTdmB9OlZ1cA8zkHlpPhn85123/B+8Xe6tiENWKELAZm0yvAoFjcbFmq4u80uUXortZTTvDbg==}
 
   motion-utils@12.12.1:
     resolution: {integrity: sha512-f9qiqUHm7hWSLlNW8gS9pisnsN7CRFRD58vNjptKdsqFLpkVnX00TNeD6Q0d27V9KzT7ySFyK1TZ/DShfVOv6w==}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -715,7 +648,6 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-<<<<<<< HEAD
   prisma@6.8.2:
     resolution: {integrity: sha512-JNricTXQxzDtRS7lCGGOB4g5DJ91eg3nozdubXze3LpcMl1oWwcFddrj++Up3jnRE6X/3gB/xz3V+ecBk/eEGA==}
     engines: {node: '>=18.18'}
@@ -726,18 +658,11 @@ packages:
       typescript:
         optional: true
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   react-dom@19.1.0:
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
       react: ^19.1.0
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> cb7f32a (version 3)
   react-hook-form@7.56.4:
     resolution: {integrity: sha512-Rob7Ftz2vyZ/ZGsQZPaRdIefkgOSrQSPXfqBdvOPwJfoGnjwRJUs7EM7Kc1mcoDv3NOtqBzPGbcMB8CGn9CKgw==}
     engines: {node: '>=18.0.0'}
@@ -749,12 +674,6 @@ packages:
     peerDependencies:
       react: '*'
 
-<<<<<<< HEAD
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
-=======
->>>>>>> 8f9a1c7 (version 3)
->>>>>>> cb7f32a (version 3)
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
@@ -795,12 +714,9 @@ packages:
       babel-plugin-macros:
         optional: true
 
-<<<<<<< HEAD
   tailwind-merge@3.3.0:
     resolution: {integrity: sha512-fyW/pEfcQSiigd5SNn0nApUOxx0zB/dm6UDU/rEwc2c3sX2smWUNbapHv+QRqLGVp9GWX3THIa7MUGPo+YkDzQ==}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   tailwindcss@4.1.7:
     resolution: {integrity: sha512-kr1o/ErIdNhTz8uzAYL7TpaUuzKIE6QPQ4qmSdxnoX/lo+5wmUHQA6h3L5yIqEImSRnAAURDirLu/BgiXGPAhg==}
 
@@ -815,12 +731,9 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-<<<<<<< HEAD
   tw-animate-css@1.3.0:
     resolution: {integrity: sha512-jrJ0XenzS9KVuDThJDvnhalbl4IYiMQ/XvpA0a2FL8KmlK+6CSMviO7ROY/I7z1NnUs5NnDhlM6fXmF40xPxzw==}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
@@ -833,12 +746,9 @@ packages:
     resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
     engines: {node: '>=18'}
 
-<<<<<<< HEAD
   zod@3.25.28:
     resolution: {integrity: sha512-/nt/67WYKnr5by3YS7LroZJbtcCBurDKKPBPWWzaxvVCGuG/NOsiKkrjoOhI8mJ+SQUXEbUzeB3S+6XDUEEj7Q==}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
@@ -853,14 +763,11 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-<<<<<<< HEAD
   '@hookform/resolvers@5.0.1(react-hook-form@7.56.4(react@19.1.0))':
     dependencies:
       '@standard-schema/utils': 0.3.0
       react-hook-form: 7.56.4(react@19.1.0)
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   '@img/sharp-darwin-arm64@0.34.2':
     optionalDependencies:
       '@img/sharp-libvips-darwin-arm64': 1.1.0
@@ -989,7 +896,6 @@ snapshots:
   '@next/swc-win32-x64-msvc@15.3.2':
     optional: true
 
-<<<<<<< HEAD
   '@prisma/client@6.8.2(prisma@6.8.2(typescript@5.8.3))(typescript@5.8.3)':
     optionalDependencies:
       prisma: 6.8.2(typescript@5.8.3)
@@ -1035,8 +941,6 @@ snapshots:
 
   '@standard-schema/utils@0.3.0': {}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   '@swc/counter@0.1.3': {}
 
   '@swc/helpers@0.5.15':
@@ -1135,7 +1039,6 @@ snapshots:
 
   chownr@3.0.0: {}
 
-<<<<<<< HEAD
   class-variance-authority@0.7.1:
     dependencies:
       clsx: 2.1.1
@@ -1144,10 +1047,6 @@ snapshots:
 
   clsx@2.1.1: {}
 
-=======
-  client-only@0.0.1: {}
-
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -1172,22 +1071,13 @@ snapshots:
 
   detect-libc@2.0.4: {}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   emailjs-com@3.2.0: {}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
-=======
-  emailjs-com@3.2.0: {}
-
->>>>>>> cce40a7 (version 4)
   enhanced-resolve@5.18.1:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.2.2
 
-<<<<<<< HEAD
   framer-motion@12.14.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       motion-dom: 12.14.0
@@ -1197,8 +1087,6 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   graceful-fs@4.2.11: {}
 
   is-arrayish@0.3.2:
@@ -1251,13 +1139,10 @@ snapshots:
       lightningcss-win32-arm64-msvc: 1.30.1
       lightningcss-win32-x64-msvc: 1.30.1
 
-<<<<<<< HEAD
   lucide-react@0.511.0(react@19.1.0):
     dependencies:
       react: 19.1.0
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   magic-string@0.30.17:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -1270,15 +1155,12 @@ snapshots:
 
   mkdirp@3.0.1: {}
 
-<<<<<<< HEAD
   motion-dom@12.14.0:
     dependencies:
       motion-utils: 12.12.1
 
   motion-utils@12.12.1: {}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   nanoid@3.3.11: {}
 
   next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
@@ -1320,7 +1202,6 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-<<<<<<< HEAD
   prisma@6.8.2(typescript@5.8.3):
     dependencies:
       '@prisma/config': 6.8.2
@@ -1328,18 +1209,11 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.3
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   react-dom@19.1.0(react@19.1.0):
     dependencies:
       react: 19.1.0
       scheduler: 0.26.0
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> cb7f32a (version 3)
   react-hook-form@7.56.4(react@19.1.0):
     dependencies:
       react: 19.1.0
@@ -1348,12 +1222,6 @@ snapshots:
     dependencies:
       react: 19.1.0
 
-<<<<<<< HEAD
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
-=======
->>>>>>> 8f9a1c7 (version 3)
->>>>>>> cb7f32a (version 3)
   react@19.1.0: {}
 
   scheduler@0.26.0: {}
@@ -1404,11 +1272,8 @@ snapshots:
       client-only: 0.0.1
       react: 19.1.0
 
-<<<<<<< HEAD
   tailwind-merge@3.3.0: {}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   tailwindcss@4.1.7: {}
 
   tapable@2.2.2: {}
@@ -1424,18 +1289,12 @@ snapshots:
 
   tslib@2.8.1: {}
 
-<<<<<<< HEAD
   tw-animate-css@1.3.0: {}
 
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
   typescript@5.8.3: {}
 
   undici-types@6.19.8: {}
 
   yallist@5.0.0: {}
-<<<<<<< HEAD
 
   zod@3.25.28: {}
-=======
->>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
