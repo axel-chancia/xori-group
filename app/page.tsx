@@ -36,14 +36,15 @@ export default function HomePage() {
 >>>>>>> d929c3e (version 4)
 =======
 import { HeroSection } from '@/components/HeroSection'
-
+import Heroe from '@/components/Heroe'
 
 export default function HomePage() {
   return (
     <main className="flex flex-col space-y-32">
+      <Heroe />
       <HeroSection />
 
     </main>
-  )
+)
 }
 >>>>>>> 8f9a1c7 (version 3)
