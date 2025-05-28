@@ -1,11 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> cce40a7 (version 4)
 =======
 >>>>>>> cb7f32a (version 3)
+=======
+>>>>>>> ac27f30 (version 6)
 import SectionServices from "@/components/Section-service"; // Ensure the case matches
 import Galeries from "@/components/Galeries";
 >>>>>>> 9dcb365 (Ajout des sections Section-service et Galeries)
@@ -36,14 +39,19 @@ export default function HomePage() {
 >>>>>>> d929c3e (version 4)
 =======
 import { HeroSection } from '@/components/HeroSection'
+=======
+>>>>>>> 0a5f40b (version 6)
 import Heroe from '@/components/Heroe'
 
 export default function HomePage() {
   return (
     <main className="flex flex-col space-y-32">
       <Heroe />
+<<<<<<< HEAD
       <HeroSection />
 
+=======
+>>>>>>> ac27f30 (version 6)
     </main>
 )
 }
