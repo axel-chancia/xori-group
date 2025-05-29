@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaBolt, FaIndustry, FaLeaf, FaUsers } from 'react-icons/fa'
 
-export default function APropos() {
+export default function page() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-blue-50 px-6 sm:px-10 lg:px-20 py-20 font-sans text-gray-800">
       <div className="max-w-6xl mx-auto space-y-20 animate-fade-in">

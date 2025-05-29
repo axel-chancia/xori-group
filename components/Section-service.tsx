@@ -34,7 +34,7 @@ const services = [
   },
 ];
 
-export default function ServicesPage() {
+export default function Service() {
   return (
     <main className="bg-[#f4f4f6] py-12 px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[#23223b] mb-12">
