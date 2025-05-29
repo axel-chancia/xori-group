@@ -1,226 +1,83 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 'use client';
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import emailjs from 'emailjs-com';
-import { FiSend } from 'react-icons/fi'; 
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
-<<<<<<< HEAD
+export default function ContactForm() {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
-export function ContactForm() {
-  const [sent, setSent] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
+    if (!formRef.current) return;
+    setStatus('sending');
 
-    emailjs
-      .sendForm(
-        'service_jjq0db5',    // ← remplace par ton ID
-        '6bX8atfZl0xutKyYZ',   // ← remplace par ton ID
-        e.target,
-        'HxfQwbqQY1FrnPKn36_EM'        // ← remplace par ton ID
-      )
-      .then(() => {
-        setSent(true);
-        setLoading(false);
-      })
-      .catch(() => {
-        alert("❌ Erreur lors de l'envoi.");
-        setLoading(false);
-      });
+    try {
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      setStatus('sent');
+      formRef.current.reset();
+    } catch (error) {
+      console.error('Erreur envoi email :', error);
+      setStatus('error');
+    }
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="bg-neutral-900 border border-neutral-700 text-white p-10 rounded-xl shadow-xl max-w-2xl w-full"
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      className="space-y-4 max-w-xl mx-auto bg-white p-6 rounded-lg shadow"
     >
-      <h2 className="text-3xl font-bold mb-8 text-center">Envoyez-nous un message</h2>
+      <h2 className="text-2xl font-semibold">Formulaire de contact</h2>
 
-      {sent ? (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-green-400 text-center text-lg font-semibold"
-        >
-          ✅ Merci ! Votre message a été envoyé. Une copie vous a aussi été envoyée.
-        </motion.div>
-      ) : (
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label className="block text-sm mb-1">Nom</label>
-            <input
-              type="text"
-              name="user_name"
-              required
-              placeholder="Votre nom"
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
-            />
-          </div>
+      <div>
+        <label htmlFor="user_name" className="block font-medium">Nom</label>
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          required
+          className="w-full border px-3 py-2 rounded"
+        />
+      </div>
 
-          <div>
-            <label className="block text-sm mb-1">Email</label>
-            <input
-              type="email"
-              name="user_email"
-              required
-              placeholder="Votre email"
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
-            />
-          </div>
+      <div>
+        <label htmlFor="user_email" className="block font-medium">Email</label>
+        <input
+          type="email"
+          id="user_email"
+          name="user_email"
+          required
+          className="w-full border px-3 py-2 rounded"
+        />
+      </div>
 
-          <div>
-            <label className="block text-sm mb-1">Message</label>
-            <textarea
-              name="message"
-              rows={5}
-              required
-              placeholder="Votre message..."
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
-            />
-          </div>
+      <div>
+        <label htmlFor="message" className="block font-medium">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows={5}
+          required
+          className="w-full border px-3 py-2 rounded"
+        />
+      </div>
 
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.95 }}
-            type="submit"
-            disabled={loading}
-            className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-6 rounded flex items-center justify-center gap-2 transition"
-          >
-            {loading ? (
-              'Envoi...'
-            ) : (
-              <>
-                <FiSend className="text-lg animate-bounce" />
-                Envoyer
-              </>
-            )}
-          </motion.button>
-        </form>
-      )}
-    </motion.div>
-=======
-"use client";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-=======
-'use client';
->>>>>>> cce40a7 (version 4)
+      <button
+        type="submit"
+        disabled={status === 'sending'}
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+      >
+        {status === 'sending' ? 'Envoi…' : 'Envoyer'}
+      </button>
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import emailjs from 'emailjs-com';
-=======
->>>>>>> cb7f32a (version 3)
-
-export function ContactForm() {
-  const [sent, setSent] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .sendForm(
-        'service_jjq0db5',    // ← remplace par ton ID
-        '6bX8atfZl0xutKyYZ',   // ← remplace par ton ID
-        e.target,
-        'HxfQwbqQY1FrnPKn36_EM'        // ← remplace par ton ID
-      )
-      .then(() => {
-        setSent(true);
-        setLoading(false);
-      })
-      .catch(() => {
-        alert("❌ Erreur lors de l'envoi.");
-        setLoading(false);
-      });
-  };
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="bg-neutral-900 border border-neutral-700 text-white p-10 rounded-xl shadow-xl max-w-2xl w-full"
-    >
-      <h2 className="text-3xl font-bold mb-8 text-center">Envoyez-nous un message</h2>
-
-      {sent ? (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-green-400 text-center text-lg font-semibold"
-        >
-          ✅ Merci ! Votre message a été envoyé. Une copie vous a aussi été envoyée.
-        </motion.div>
-      ) : (
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label className="block text-sm mb-1">Nom</label>
-            <input
-              type="text"
-              name="user_name"
-              required
-              placeholder="Votre nom"
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm mb-1">Email</label>
-            <input
-              type="email"
-              name="user_email"
-              required
-              placeholder="Votre email"
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm mb-1">Message</label>
-            <textarea
-              name="message"
-              rows={5}
-              required
-              placeholder="Votre message..."
-              className="w-full bg-neutral-800 text-white border border-neutral-600 rounded px-4 py-2"
-            />
-          </div>
-
-<<<<<<< HEAD
-      {isSubmitSuccessful && <p className="text-green-600">Merci pour votre message !</p>}
+      {status === 'sent' && <p className="text-green-600">Message envoyé !</p>}
+      {status === 'error' && <p className="text-red-600">Erreur lors de l’envoi.</p>}
     </form>
->>>>>>> 0a2747e (projets et contact)
-=======
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.95 }}
-            type="submit"
-            disabled={loading}
-            className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-6 rounded flex items-center justify-center gap-2 transition"
-          >
-            {loading ? (
-              'Envoi...'
-            ) : (
-              <>
-                <FiSend className="text-lg animate-bounce" />
-                Envoyer
-              </>
-            )}
-          </motion.button>
-        </form>
-      )}
-    </motion.div>
->>>>>>> cce40a7 (version 4)
   );
 }
