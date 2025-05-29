@@ -24,7 +24,7 @@ export default function Header() {
                 height={40}
                 priority
               />
-              <span className="text-xl font-bold text-blue-600 ml-2">MonEntreprise</span>
+              <span className="text-xl font-bold text-black-600 ml-2">Mon Entreprise</span>
             </Link>
           </div>
 
